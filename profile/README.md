@@ -36,18 +36,9 @@ Aethrix turns any API spec into **one live model** — manual testing, automatio
 simulation and load testing all work against it. It runs on **your machine**, so your
 specs and your secrets never leave it.
 
-`Free for individuals` · `No sign-up` · `Installs in under a minute` · `Windows · macOS · Linux`
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.png">
-    <img src="assets/hero-light.png" width="920" alt="Aethrix Studio — the API Playground: one live object model for every API">
-  </picture>
-</p>
-
 | | |
 |---|---|
-| **Manual testing** — *object tree, not raw JSON* | Explore every endpoint with a structured editor that knows what each field expects. |
+| **Manual testing** — *object tree* | Explore every endpoint with a structured editor that knows what each field expects. |
 | **Test automation** | Build repeatable test suites with steps, assertions, data-driven inputs and load profiles. |
 | **Service simulation** | Stub any endpoint with multiple responses, conditions, delays, faults and gRPC streaming. |
 | **Ora — the AI assistant** (included) | Describe what you want. Ora fills requests, builds test suites, designs data and diagnoses failures. |
@@ -96,14 +87,6 @@ manuels, l'automatisation, la simulation de services et les tests de charge s'ap
 tous sur ce modèle. Il tourne sur **votre machine** : vos contrats et vos secrets ne la
 quittent jamais.
 
-`Gratuit pour les particuliers` · `Sans inscription` · `Installé en moins d'une minute` · `Windows · macOS · Linux`
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.png">
-    <img src="assets/hero-light.png" width="920" alt="Aethrix Studio — le terrain de jeu API : un modèle d'objets vivant pour chaque API">
-  </picture>
-</p>
 
 | | |
 |---|---|
@@ -156,15 +139,6 @@ Site web · Téléchargement · Notes de version — *bientôt disponible*
 
 Aethrix 将任何 API 规范转化为**一个实时模型**——手动测试、自动化、服务模拟与负载测试
 都基于它进行。它运行在**您的机器**上，您的规范与密钥不会离开本机。
-
-`个人免费` · `无需注册` · `一分钟内完成安装` · `Windows · macOS · Linux`
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.png">
-    <img src="assets/hero-light.png" width="920" alt="Aethrix Studio — API 测试台：为每个 API 提供一个实时对象模型">
-  </picture>
-</p>
 
 | | |
 |---|---|
