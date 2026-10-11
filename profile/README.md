@@ -1,9 +1,10 @@
 <!--
   Public landing page — AethrixHQ/.github → profile/README.md.
   Rendered on the organization profile page (github.com/AethrixHQ) for everyone.
-  The member-only variant with links to the private repositories lives in
-  AethrixHQ/.github-private → profile/README.md. Keep the two in sync when the
-  product or repository layout changes; do not add private-repository links here.
+  Marketing-focused: no repository names, no internal infrastructure. The member-only
+  variant (repository table with links) lives in AethrixHQ/.github-private →
+  profile/README.md — the two pages are intentionally different, keep the product
+  facts consistent between them.
 -->
 
 <div align="center">
@@ -13,144 +14,192 @@
   <img src="assets/aethrix-logo-light.svg" width="128" alt="Aethrix Labs — the prism">
 </picture>
 
-# Aethrix Labs
+# Aethrix Studio
 
-**Aethrix Studio** is an API testing platform: a cross-platform desktop IDE for manual
-testing, automation, service simulation and an AI assistant, with a CLI for CI/CD and
-cloud services behind it — accounts, licensing, billing and extension distribution.
+*Every API. One simple way to test.*
 
 [English](#english) · [Français](#francais) · [简体中文](#zh-hans)
 
-![.NET 10](https://img.shields.io/badge/.NET-10-512bd4)
-![Avalonia 12](https://img.shields.io/badge/Avalonia-12-5b4de8)
-![Windows | macOS | Linux](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-24292f)
+![Technical Preview — free](https://img.shields.io/badge/Technical_Preview-free-5b4de8)
+![Windows | macOS | Linux](https://img.shields.io/badge/Windows%20%7C%20macOS%20%7C%20Linux-24292f)
 
 </div>
 
 <a id="english"></a>
 ## 🇬🇧 English
 
-### Repositories
+**TEST · AUTOMATE · SIMULATE · AI-ASSISTED**
 
-| Repository | What it holds |
+### Every API. One simple way to test.
+
+Aethrix turns any API spec into **one live model** — manual testing, automation, service
+simulation and load testing all work against it. It runs on **your machine**, so your
+specs and your secrets never leave it.
+
+`Free for individuals` · `No sign-up` · `Installs in under a minute` · `Windows · macOS · Linux`
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.png">
+    <img src="assets/hero-light.png" width="920" alt="Aethrix Studio — the API Playground: one live object model for every API">
+  </picture>
+</p>
+
+| | |
 |---|---|
-| `aethrix-studio` | The Aethrix Studio desktop IDE (Avalonia 12 / .NET 10), the `aeth` CLI, the **Ora** AI assistant and the user documentation — plus the workspace engineering hub (plans, decisions, tracking) |
-| `aethrix-services` | The cloud back-end services: accounts, activation & licensing, AI gateway, billing, extension hub |
-| `aethrix-web` | The web properties: the marketing site and the account portal |
-| `aethrix-extensions` | Extension and toolkit packages |
-| `aethrix-design` | Brand and design-system masters |
-| `aethrix-sdlc` | Azure Pipelines templates and workspace tooling shared by every repository |
+| **Manual testing** — *object tree, not raw JSON* | Explore every endpoint with a structured editor that knows what each field expects. |
+| **Test automation** | Build repeatable test suites with steps, assertions, data-driven inputs and load profiles. |
+| **Service simulation** | Stub any endpoint with multiple responses, conditions, delays, faults and gRPC streaming. |
+| **Ora — the AI assistant** (included) | Describe what you want. Ora fills requests, builds test suites, designs data and diagnoses failures. |
 
-### Inside Aethrix Studio
+**Seven protocols. One object model.** Plus the APIs you design in place:
+`OpenAPI 3.x` · `SOAP / WSDL` · `gRPC` · `GraphQL` · `OData` · `Apache Kafka` · `WebSocket` · `Custom schema`
 
-- **Manual testing** — REST, SOAP, gRPC, GraphQL, OData, Kafka, WebSocket
-- **Automation** — performance and data-driven test campaigns
-- **Service simulation** — stub remote dependencies with URL handlers
-- **Ora** — the built-in AI assistant (preview)
-- **`aeth` CLI** — run your tests in any CI/CD pipeline
-- **UI automation** — Selenium-driven browser sessions
+**Human & AI, same model.** The object tree for you, tool calls for Ora — and an
+agent-ready surface out of the box: `MCP · CLI · Daemon`. The Daemon serves your compiled
+model as an MCP server, and the `aeth` CLI runs your tests in any pipeline.
 
-### CI/CD & infrastructure
+**Native, not web.** Cold start under five seconds, no bundled browser engine — no Node,
+no JVM, no Chromium. Telemetry: none. Network: optional — it runs fully offline; the cloud
+account is only for licence and AI credits.
 
-- **Azure Pipelines** runs the workspace CI: a test gate on every push and pull request
-  (offline fast tier), cross-platform packaging (Windows, macOS and Linux installers), and
-  approval-gated manual publishing for packages and releases. Pipeline templates are shared
-  from `aethrix-sdlc` so every repository enforces the same gates; GitHub Actions adds a
-  consistency check on the engineering tracking files.
-- Hosted on **Microsoft Azure**: App Service for the web properties and identity endpoints,
-  Cosmos DB as the data store, Blob Storage for release distribution.
-- **Central identity** — AccountService is the root of trust and issues signed tokens
-  carrying license and feature claims; sign in with a Microsoft, Google or
-  WeChat/Alipay (China) account.
-- **Your data, your keys** — the extension hub is designed to be self-hosted, and BYOK
-  routing keeps AI prompts on your own provider keys.
+**Your machine. Your keys. Your data.**
+
+- Specs, secrets and responses stay local by default — what leaves your machine is
+  documented, and what stays, stays.
+- BYOK: AI requests go **directly** from Aethrix Studio to your LLM provider — our servers
+  never see your prompts (OpenAI, Anthropic, DeepSeek, private Azure, Ollama, on-prem endpoints).
+- Data residency EU · US · CN · Global, selected at registration. SSO with Entra ID, Okta
+  or Google Workspace. Enterprises can run fully air-gapped.
+
+**The full platform is free right now** — every protocol, automation, simulation, and Ora.
+
+Website · Download · Release notes — *coming soon*
+<!--
+  When the public site is live, replace the line above with:
+  🌐 https://www.aethrixstudio.com · ⬇️ https://www.aethrixstudio.com/download · 🏷️ <current version>
+-->
+
+*Building the tools that build trust.*
 
 ---
 
 <a id="francais"></a>
 ## 🇫🇷 Français
 
-**Aethrix Studio** est une plateforme de test d'API : un IDE de bureau multiplateforme pour
-les tests manuels, l'automatisation (performance et pilotée par les données), la simulation
-de services et un assistant IA, avec un CLI pour l'intégration continue et, derrière, des
-services cloud — comptes, licences, facturation et distribution d'extensions.
+**TESTER · AUTOMATISER · SIMULER · ASSISTÉ PAR IA**
 
-### Dépôts
+### Toutes vos API. Une façon simple de tester.
 
-| Dépôt | Contenu |
+Aethrix transforme n'importe quel contrat d'API en **un modèle vivant** — les tests
+manuels, l'automatisation, la simulation de services et les tests de charge s'appuient
+tous sur ce modèle. Il tourne sur **votre machine** : vos contrats et vos secrets ne la
+quittent jamais.
+
+`Gratuit pour les particuliers` · `Sans inscription` · `Installé en moins d'une minute` · `Windows · macOS · Linux`
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.png">
+    <img src="assets/hero-light.png" width="920" alt="Aethrix Studio — le terrain de jeu API : un modèle d'objets vivant pour chaque API">
+  </picture>
+</p>
+
+| | |
 |---|---|
-| `aethrix-studio` | L'IDE de bureau Aethrix Studio (Avalonia 12 / .NET 10), le CLI `aeth`, l'assistant IA **Ora** et la documentation utilisateur — plus le centre d'ingénierie de l'espace de travail (plans, décisions, suivi) |
-| `aethrix-services` | Les services back-end cloud : comptes, activation & licences, passerelle IA, facturation, hub d'extensions |
-| `aethrix-web` | Les propriétés web : le site vitrine et le portail de comptes |
-| `aethrix-extensions` | Les paquets d'extensions et de boîtes à outils |
-| `aethrix-design` | Les sources de la marque et du design system |
-| `aethrix-sdlc` | Les modèles Azure Pipelines et l'outillage partagés par tous les dépôts |
+| **Tests manuels** — *l'arbre d'objets, pas le JSON brut* | Explorez chaque endpoint avec un éditeur structuré qui connaît le format attendu de chaque champ. |
+| **Automatisation des tests** | Composez des suites reproductibles : étapes, assertions, données de test et profils de charge. |
+| **Simulation de services** | Stubbez n'importe quel endpoint : réponses multiples, conditions, délais, fautes et streaming gRPC. |
+| **Assistant IA — Ora** (inclus) | Décrivez ce que vous voulez. Ora remplit les requêtes, construit les suites, conçoit les données et diagnostique les échecs. |
 
-### Dans Aethrix Studio
+**Sept protocoles. Un modèle d'objets.** Et les API que vous créez directement dans l'outil :
+`OpenAPI 3.x` · `SOAP / WSDL` · `gRPC` · `GraphQL` · `OData` · `Apache Kafka` · `WebSocket` · `Schéma personnalisé`
 
-- **Tests manuels** — REST, SOAP, gRPC, GraphQL, OData, Kafka, WebSocket
-- **Automatisation** — campagnes de tests de performance et pilotées par les données
-- **Simulation de services** — stubbez les dépendances distantes avec des gestionnaires d'URL
-- **Ora** — l'assistant IA intégré (aperçu)
-- **CLI `aeth`** — exécutez vos tests dans n'importe quel pipeline CI/CD
-- **Automatisation d'interface** — sessions de navigateur pilotées par Selenium
+**L'humain et l'IA, un même modèle.** L'arbre d'objets pour vous, les appels d'outils pour
+Ora — et une surface prête pour les agents dès l'installation : `MCP · CLI · Daemon`. Le
+Daemon expose votre modèle compilé comme serveur MCP, et le CLI `aeth` exécute vos tests
+dans n'importe quel pipeline.
 
-### CI/CD & infrastructure
+**Natif, pas web.** Démarrage à froid en moins de cinq secondes, sans moteur de navigateur
+embarqué — ni Node, ni JVM, ni Chromium. Télémétrie : aucune. Réseau : optionnel — il
+fonctionne entièrement hors ligne ; le compte cloud ne sert qu'aux licences et aux crédits IA.
 
-- **Azure Pipelines** exécute la CI de l'espace de travail : un verrou de tests à chaque
-  push et pull request (batterie rapide hors ligne), l'empaquetage multiplateforme
-  (installeurs Windows, macOS et Linux), et une publication manuelle avec approbation pour
-  les paquets et les releases. Les modèles de pipeline sont partagés depuis `aethrix-sdlc`
-  afin que chaque dépôt applique les mêmes verrous ; GitHub Actions ajoute un contrôle de
-  cohérence des fichiers de suivi d'ingénierie.
-- Hébergé sur **Microsoft Azure** : App Service pour les propriétés web et les points de
-  terminaison d'identité, Cosmos DB comme magasin de données, Blob Storage pour la
-  distribution des releases.
-- **Identité centralisée** — AccountService est la racine de confiance et émet des jetons
-  signés portant les claims de licence et de fonctionnalités ; connectez-vous avec un
-  compte Microsoft, Google ou WeChat/Alipay (Chine).
-- **Vos données, vos clés** — le hub d'extensions est conçu pour être auto-hébergé, et le
-  routage BYOK garde les requêtes IA sur vos propres clés de fournisseur.
+**Votre machine. Vos clés. Vos données.**
+
+- Contrats, secrets et réponses restent locaux par défaut — ce qui quitte votre machine
+  est documenté, ce qui reste, reste.
+- BYOK : les requêtes IA vont **directement** d'Aethrix Studio vers votre fournisseur LLM —
+  nos serveurs ne voient jamais vos prompts (OpenAI, Anthropic, DeepSeek, Azure privé,
+  Ollama, endpoints on-prem).
+- Résidence des données UE · US · CN · Global, choisie à l'inscription. SSO avec Entra ID,
+  Okta ou Google Workspace. Les entreprises peuvent fonctionner totalement air-gapped.
+
+**Toute la plateforme est gratuite pour le moment** — chaque protocole, l'automatisation,
+la simulation, et Ora.
+
+Site web · Téléchargement · Notes de version — *bientôt disponible*
+<!--
+  Quand le site public sera en ligne, remplacer la ligne ci-dessus par :
+  🌐 https://www.aethrixstudio.com · ⬇️ https://www.aethrixstudio.com/download · 🏷️ <version courante>
+-->
+
+*Bâtissez une API fiable ; gagnez une confiance durable.*
 
 ---
 
 <a id="zh-hans"></a>
 ## 🇨🇳 简体中文
 
-**Aethrix Studio** 是一个 API 测试平台：跨平台桌面 IDE，覆盖手动测试、自动化（性能与数据驱动）、
-服务模拟与 AI 助手，并提供面向 CI/CD 的 CLI；后端由云服务支撑——账户、许可、计费与扩展分发。
+**测试 · 自动化 · 模拟 · AI 辅助**
 
-### 仓库
+### 所有 API。一种至简的测试方式。
 
-| 仓库 | 内容 |
+Aethrix 将任何 API 规范转化为**一个实时模型**——手动测试、自动化、服务模拟与负载测试
+都基于它进行。它运行在**您的机器**上，您的规范与密钥不会离开本机。
+
+`个人免费` · `无需注册` · `一分钟内完成安装` · `Windows · macOS · Linux`
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.png">
+    <img src="assets/hero-light.png" width="920" alt="Aethrix Studio — API 测试台：为每个 API 提供一个实时对象模型">
+  </picture>
+</p>
+
+| | |
 |---|---|
-| `aethrix-studio` | Aethrix Studio 桌面 IDE（Avalonia 12 / .NET 10）、`aeth` CLI、AI 助手 **Ora** 与用户文档——也是整个工作区的工程中枢（规划、决策与跟踪） |
-| `aethrix-services` | 云端后端服务：账户、激活与许可、AI 网关、计费、扩展中心 |
-| `aethrix-web` | Web 应用：官网与账户门户 |
-| `aethrix-extensions` | 扩展与工具包 |
-| `aethrix-design` | 品牌与设计系统源文件 |
-| `aethrix-sdlc` | 所有仓库共享的 Azure Pipelines 模板与工作区工具 |
+| **手动测试** —— *对象树，而非原始 JSON* | 通过结构化编辑器探索每个端点，它知道每个字段的预期格式。 |
+| **测试自动化** | 用步骤、断言、数据驱动输入与负载配置构建可重复的测试套件。 |
+| **服务模拟** | 为任意端点创建桩：多重响应、条件、延迟、故障注入与 gRPC 流。 |
+| **AI 助手 — Ora**（包含） | 说出您想要什么。Ora 会填充请求、构建测试套件、设计测试数据并诊断失败。 |
 
-### Aethrix Studio 内置模块
+**七大协议。一个对象模型。** 还可以直接在工具中设计您自己的 API：
+`OpenAPI 3.x` · `SOAP / WSDL` · `gRPC` · `GraphQL` · `OData` · `Apache Kafka` · `WebSocket` · `自定义 Schema`
 
-- **手动测试** — REST、SOAP、gRPC、GraphQL、OData、Kafka、WebSocket
-- **自动化** — 性能测试与数据驱动测试
-- **服务模拟** — 通过 URL 处理器为远程依赖打桩
-- **Ora** — 内置 AI 助手（预览版）
-- **`aeth` CLI** — 在任意 CI/CD 流水线中执行测试
-- **UI 自动化** — Selenium 驱动的浏览器会话
+**人与 AI，同一个模型。** 对象树给您，工具调用交给 Ora——开箱即用的 Agent 接入能力：
+`MCP · CLI · Daemon`。Daemon 将您编译好的模型作为 MCP 服务器提供，`aeth` CLI 可在任意
+流水线中执行您的测试。
 
-### CI/CD 与基础设施
+**原生应用，而非网页。** 冷启动不到五秒，不捆绑浏览器引擎——没有 Node、没有 JVM、
+没有 Chromium。遥测：无。网络：可选——完全离线运行；云账户仅用于许可与 AI 额度。
 
-- **Azure Pipelines** 承载整个工作区的 CI：每次 push 与 PR 都会运行测试门禁（离线快速档），
-  跨平台打包（Windows、macOS、Linux 安装包），包与版本的发布使用带审批的手动流水线。
-  流水线模板统一由 `aethrix-sdlc` 共享，确保每个仓库执行相同的门禁；GitHub Actions 负责
-  工程跟踪文件的一致性检查。
-- 托管于 **Microsoft Azure**：App Service 承载 Web 应用与身份端点，Cosmos DB 作为数据存储，
-  Blob Storage 用于版本分发。
-- **集中式身份** — AccountService 是信任根，签发携带许可与功能声明的签名令牌；支持
-  Microsoft、Google 或微信/支付宝（中国区）登录。
-- **数据主权** — 扩展中心设计为可自托管，BYOK 路由让 AI 请求使用您自己的服务商密钥。
+**您的机器。您的密钥。您的数据。**
+
+- 规范、密钥与响应默认保存在本机——哪些数据会离开本机、哪些永远不会，都有公开文档说明。
+- BYOK：AI 请求**直接**从 Aethrix Studio 发往您的 LLM 服务商——我们的服务器永远看不到
+  您的提示词（OpenAI、Anthropic、DeepSeek、Azure 专用、Ollama、本地端点）。
+- 数据驻留 EU · US · CN · Global，注册时选择。企业 SSO 支持 Entra ID、Okta、
+  Google Workspace。企业可完全物理隔离运行。
+
+**技术预览期间全平台免费** —— 所有协议、自动化、模拟与 Ora。
+
+官网 · 下载 · 版本发布 —— *即将上线*
+<!--
+  公开网站上线后，将上一行替换为：
+  🌐 https://www.aethrixstudio.com · ⬇️ https://www.aethrixstudio.com/download · 🏷️ <当前版本>
+-->
+
+*铸可信之器，成信赖之基。*
 
 ---
 
