@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="50 50 156 156" width="256" height="256">
+  <!-- Aethrix Lab company mark — the prism: one beam enters and passes through, every facet
+       is a capability. Company surfaces only: the site footer, the account portal and the
+       OIDC pages. The product mark (Studio) is studio-logo-*.svg; the assistant is the drop.
+       Dark palette. Mark scaled 1.287x and centred in the same 156-unit frame as the product
+       icon so both marks read at the same optical size.
+       The beam gradient uses userSpaceOnUse: the beam is a vertical line, whose bounding box
+       has zero width, and an objectBoundingBox gradient is undefined on it (the beam then
+       paints nothing — the bug that made the prism beamless on the site). -->
+  <defs>
+    <linearGradient id="logo-beam-dark" gradientUnits="userSpaceOnUse" x1="64" y1="9" x2="64" y2="122">
+      <stop offset="0%"   stop-color="#00fff5"/>
+      <stop offset="55%"  stop-color="#00d4d0" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#5b4de8" stop-opacity="0.85"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(45.63,43.72) scale(1.287)">
+    <polygon points="64,9 109,42 64,53 19,42" fill="#b0a8ff"/>
+    <polygon points="64,53 109,42 109,82 64,93" fill="#887fe6"/>
+    <polygon points="64,93 109,82 64,122 19,82" fill="#554db3"/>
+    <polygon points="19,42 64,53 64,93 19,82" fill="#8878dd" opacity="0.4"/>
+    <line x1="64" y1="9" x2="64" y2="122" stroke="url(#logo-beam-dark)" stroke-width="7" stroke-linecap="round"/>
+    <circle cx="64" cy="9" r="6" fill="#00fff5" opacity="0.85"/>
+    <circle cx="64" cy="122" r="3.9" fill="#00fff5" opacity="0.45"/>
+  </g>
+</svg>
