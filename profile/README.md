@@ -10,8 +10,8 @@
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/aethrix-logo-dark.svg">
-  <img src="assets/aethrix-logo-light.svg" width="128" alt="Aethrix Labs — the prism">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/studio-logo-dark.png">
+  <img src="assets/studio-logo-light.png" width="128" alt="Aethrix Studio — the layered stack">
 </picture>
 
 # Aethrix Studio
